@@ -55,7 +55,7 @@ TrojAI container submissions required that a configuration is included which ena
 - Specify a "metaparameters" file that documents a container's manually tunable parameters and their range of possible values. 
 - Generate "learned parameters" via a new reconfiguration API.
 
-Submitted containers will now need to work in two different modes:
+Submitted containers will work in two different modes:
 
 - Inference Mode:  Containers will take as input both a "metaparameter" file and a model and output the probability of poisoning. 
 - Reconfiguration Mode: Containers will take a new dataset as input and output a file dump of the new learned parameters tuned to that input dataset.
