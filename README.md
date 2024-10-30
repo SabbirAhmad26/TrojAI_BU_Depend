@@ -119,21 +119,8 @@ Example data can be downloaded from the NIST [Leader-Board website](https://page
 
 A small toy set of clean data is also provided in this repository under the model/example-data/ folder. This toy set of data is only for testing your environment works correctly. 
 
-For some versions of this repository, the example model is too large to check into git. In those cases a model/README.md will point you to where the example model can be downloaded. 
-
 --------------
-# Submission Instructions
-
-1. Package your trojan detection solution into a Singularity Container.
-    - Name your container file based on which [server](https://pages.nist.gov/trojai/docs/architecture.html) you want to submit to.
-2. Request an [Account](https://pages.nist.gov/trojai/docs/accounts.html) on the NIST Test and Evaluation Server.
-3. Follow the [Google Drive Submission Instructions](https://pages.nist.gov/trojai/docs/submission.html#container-submission).
-4. View job status and results on the [Leader-Board website](https://pages.nist.gov/trojai/).
-5. Review your [submission logs](https://pages.nist.gov/trojai/docs/submission.html#output-logs) shared back with your team Google Drive account.
-
-
---------------
-# How to Build this Minimal Example
+# How to Build this Detector implementation
 
 ## Install Miniforge
 
