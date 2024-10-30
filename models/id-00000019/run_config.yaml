@@ -1,0 +1,27 @@
+end_trigger_pattern:
+- 3
+- 0
+- 3
+- 0
+- 4
+- 3
+- 0
+- 3
+- 1
+gru_model_actor_linear_mid_dims: &id001
+- 32
+- 32
+gru_model_critic_linear_mid_dims: *id001
+gru_model_hidden_shape:
+- 64
+- 64
+gru_model_n_layers:
+- 2
+- 2
+max_env_steps: 4000000000
+num_clean_envs: 4
+num_close_envs: 4
+num_poison_envs: 2
+patience: 5
+room_trigger_pattern: null
+save_dir: ./models-seed-1/sample_model_config_45

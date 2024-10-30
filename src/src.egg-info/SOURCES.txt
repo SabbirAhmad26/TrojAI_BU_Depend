@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/__init__.py
+src/public/__init__.py
+src/public/colorful_memory.py
+src/public/colorful_memory_agent.py
+src/public/make_colorful_memory_funtions.py
+src/public/simple_eval_colorful_memory_model.py
+src/public/trojai_gru_minigrid_arch.py
+src/src.egg-info/PKG-INFO
+src/src.egg-info/SOURCES.txt
+src/src.egg-info/dependency_links.txt
+src/src.egg-info/requires.txt
+src/src.egg-info/top_level.txt

@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "TrojAI BU submission.",
+  "technique": "SVM_Classifier_3",
+  "technique_description": "SVM detector 2 updated with weight based features.",
+  "technique_changes": "Variant_5",
+  "technique_type": ["Weight Analysis"],
+  "commit_id": "f358c541f2bff193e7f32a0fa53da8e14e0af445", 
+  "repo_name": "https://github.com/BU-DEPEND-LAB/TrojAI-Submissions",
+  "required": [],
+  "additionalProperties": false,
+  "type": "object",
+  "properties": {
+	"train_input_features":  {
+		"description": "The input features for training.",
+		"type": "integer",
+		"minimum": 5,
+		"maximum": 500,
+		"suggested_minimum": 10,
+		"suggested_maximum": 200
+	},
+	  "train_weight_rso_seed": {
+		"description": "Random state seed for weights during training.",
+		"type": "integer",
+		"minimum": 1,
+		"maximum": 99999999,
+		"suggested_minimum": 1234,
+		"suggested_maximum": 12345
+	}
+  }
+}

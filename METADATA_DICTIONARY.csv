@@ -1,0 +1,17 @@
+Column Name,Explanation,Data Type
+split,"The data split which the model belongs to. (train, test, holdout, leftovers)",string
+model_name,The unique identifier for each trained model. This value is used as the folder name within the released dataset.,string
+mean_clean_return,Average reward per episode in a clean environment (no poison or poisoned reward function).,float
+mean_poisoned_return,"Average reward per episode in a poisoned environment, where the trigger and poison reward function for the environment are those that were used to train the trojan into the agent.",float
+clean_success_rate,"Ratio of episodes in which the agent performed the task correctly in a clean (non-poisoned) environment, expressed as a decimal.",float
+poisoned_success_rate,"Ratio of episodes in which the agent performed the trojan task correctly with the trigger present in the environment, expressed as a decimal. In other words, how often the agent correctly reacts to the trigger to perform the trojan action instead of the clean one on a per-episode basis.",float
+model_dir,Internal directory where the original model was saved.,string
+poisoned,Whether the model is poisoned (contains a trojan).,"string in {True, False}"
+room_trigger_pattern,Trigger that occurs in the room the agent starts in.,integer > 0 array
+end_trigger_pattern,Trigger that occurs in the wall at the end of the hallway.,integer > 0 array
+patience,How many consecutive updates to average return over to determine if the training performance exceeds the training performance threshold.,integer > 0
+gru_model_channels,GRU CNN model embedding hidden layers specification.,integer > 0 array
+gru_model_actor_linear_mid_dims,GRU CNN model actor hidden layers specification.,integer > 0 array
+gru_model_critic_linear_mid_dims,GRU CNN model critic hidden layers specification.,integer > 0 array
+gru_model_hidden_shape,GRU CNN model GRU hidden layers specification.,integer > 0 array
+gru_model_n_layers,GRU CNN model GRU number of layers specification.,integer > 0 array

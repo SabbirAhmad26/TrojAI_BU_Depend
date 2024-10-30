@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: src
+Version: 0.0.1
+Summary: Framework for generating DRL models solving a Minigrid task called Colorful Memory for IARPA TrojAI.
+Author-email: Chace Ashcraft <chace.ashcraft@jhuapl.edu>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: minigrid>=2.3.1
+Requires-Dist: tensorboardX>=2.6.2.2
+Requires-Dist: torch-ac>=1.4.0
+Requires-Dist: yacs>=0.1.8
