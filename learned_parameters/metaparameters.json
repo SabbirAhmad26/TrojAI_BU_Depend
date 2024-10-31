@@ -1,4 +1,5 @@
 {
-  "train_input_features": 132,
+  "train_input_features": 54,
+  "train_svd_features": 10,
   "train_weight_rso_seed": 44
 }

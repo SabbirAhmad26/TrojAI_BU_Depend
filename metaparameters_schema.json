@@ -19,6 +19,14 @@
 		"suggested_minimum": 10,
 		"suggested_maximum": 200
 	},
+	"train_svd_features":  {
+		"description": "The number of singular values features for training.",
+		"type": "integer",
+		"minimum": 5,
+		"maximum": 500,
+		"suggested_minimum": 10,
+		"suggested_maximum": 200
+	},
 	  "train_weight_rso_seed": {
 		"description": "Random state seed for weights during training.",
 		"type": "integer",

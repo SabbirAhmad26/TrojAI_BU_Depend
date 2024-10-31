@@ -55,3 +55,5 @@ infer \
 --metaparameters_filepath=./metaparameters.json \
 --schema_filepath=./metaparameters_schema.json \
 --learned_parameters_dirpath=./learned_parameters/
+
+apptainer build detector.simg detector.def

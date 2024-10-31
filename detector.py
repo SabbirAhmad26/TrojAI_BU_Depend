@@ -56,6 +56,7 @@ class Detector(AbstractDetector):
         self.layer_transform_filepath = os.path.join(self.learned_parameters_dirpath, "layer_transform.bin")
 
         self.input_features = metaparameters["train_input_features"]
+        self.svd_features = 10
         self.weight_params = {
             "rso_seed": metaparameters["train_weight_rso_seed"],
         }
@@ -63,6 +64,7 @@ class Detector(AbstractDetector):
     def write_metaparameters(self):
         metaparameters = {
             "train_input_features": self.input_features,
+            "train_svd_features": self.svd_features,
             "train_weight_rso_seed": self.weight_params["rso_seed"],
         }
 
@@ -89,7 +91,6 @@ class Detector(AbstractDetector):
         """
         model_state = model_dict['model_state']  # Extract the model_state component
         model_feats = None
-        l2_norms = []
         # Iterate through the keys in model_state
         for key in model_state.keys():
             if key.startswith('state_emb'):
@@ -112,9 +113,9 @@ class Detector(AbstractDetector):
                     svd_mean = s.mean().unsqueeze(0)
 
                     if model_feats is None:
-                        model_feats = torch.cat((min_val, max_val, mean_val, std_val, s))
+                        model_feats = torch.cat((min_val, max_val, mean_val, std_val, s[:self.svd_features]))
                     else:
-                        model_feats = torch.cat((model_feats, min_val, max_val, mean_val, std_val, s))
+                        model_feats = torch.cat((model_feats, min_val, max_val, mean_val, std_val, s[:self.svd_features]))
 
                 elif key.endswith('.bias'):
                     # Get the bias tensor, flatten it
