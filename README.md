@@ -1,4 +1,4 @@
-This repo contains the submission to the [TrojAI leaderboard](https://pages.nist.gov/trojai/) from IARPA for the round rl-colorful-memory-sep2024. 
+This repository contains the submission to the [TrojAI leaderboard](https://pages.nist.gov/trojai/) from IARPA for the round rl-colorful-memory-sep2024. 
 
 Every solution submitted for evaluation is containerized via [Singularity](https://singularity.hpcng.org/) (see this [Singularity tutorial](https://pawseysc.github.io/sc19-containers/)).  
 
